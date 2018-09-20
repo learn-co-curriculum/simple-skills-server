@@ -1,0 +1,29 @@
+<h2>This is the <strong>all-powerful</strong> SERVER speaking:</h2>
+
+<p>I received the following parameters: </p>
+<table border="1">
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><span class="code">first_name</span></td>
+    <td><%= params[:first_name] %></td>
+  </tr>
+  <tr>
+    <td><span class="code">family_name</span></td>
+    <td><%= params[:family_name] -%></td>
+  </tr>
+</table>
+
+<p>Thanks to the power of server-side logic I can create a <strong>full_name</strong></p>
+
+<p>It is....</p>
+
+<p>It is....</p>
+
+<p>It is <strong><%= [params[:first_name], params[:family_name]].join(" ") -%></strong></p>
+
+<p>In all seriousness, servers take <em>parameters</em> and use them to make
+decisions (look up pending orders, find your friends' latest photos, etc.).
+</p>
